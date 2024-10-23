@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.reveal .slide-number{
+			top: 0;
+			bottom: auto;
+			background: none;
+			color: #FF79C6;
+			font-size: 50px;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><!--1-->
+					<section>
+						<h1>Дефейсинг</h1>
+						<a href="#/1" >биба</a>
+						<span>|</span>
+						<a href="#/2">боба</a>
+						<span>|</span>
+						<a href="#/3">бибра</a>
+					</section>
+					<section>
+						<img data-type="qrcode" class="r-stretch" alt="">
+					</section>
+				</section>
+				<section><!--2-->
+					<h2>Дефейсинг это ...</h2>
+					От англ <code>deface — уродовать, искажать</code>
+					<p style="text-align: left;">Тип хакерской атаки, при которой главная (или другая важная) страница веб-сайта заменяется на другую — как правило, вызывающего вида (реклама, предупреждение, угроза, интернет-мем…).</p>
+					<p style="text-align: left;">Зачастую доступ ко всему остальному сайту блокируется, или же прежнее содержимое сайта вовсе удаляется.</p>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/qrcode/qrcode.js"></script>
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			const colors = {
+			blue0: 'rgb(61, 89, 161)',
+			blue: 'rgb(122, 162, 247)',
+			cyan: 'rgb(125, 207, 255)',
+			magenta: 'rgb(187, 154, 247)',
+			orange: 'rgb(255, 158, 100)',
+			yellow: 'rgb(224, 175, 104)',
+			green: 'rgb(158, 206, 106)',
+			teal: 'rgb(26, 188, 156)',
+			red: 'rgb(255, 117, 127)',
+			red1: 'rgb(219, 75, 75)',
+			fg: 'rgb(192, 202, 245)',
+			bg: 'rgb(26, 27, 38)',
+			transparent: "#00000000"
+			};
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealChalkboard], 
+				slideNumber: true,
+				
+				chalkboard: {
+				boardmarkerWidth: 5,
+				boardmarkers: [
+					{ color: colors.bg, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.fg, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.blue, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.red, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.green, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.yellow, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.teal, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+					{ color: colors.orange, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
+				],
+				chalks: [
+					{ color: colors.bg, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.fg, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.blue, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.red, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.green, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.yellow, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.teal, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+					{ color: colors.orange, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
+				]
+				},
+			});
+			
+		</script>
+	</body>
+</html>
